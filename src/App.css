@@ -95,18 +95,29 @@ header{
   left:0px;
   display:flex;
   flex-direction: column-reverse;
-  overflow-y:scroll;
+  overflow-y:auto;
 }
 .message-wrap{
   width:100%;
+  display:flex;
+  justify-content: flex-start;
 }
-.message{
+.message-wrap[from='me']{
+  justify-content: flex-end;
+}
+.msg-text{
   color:white;
   background:black;
   margin:5px;
   border-radius:5px;
   padding:3px 6px;
   display: inline-block;
+}
+.msg-name{
+  font:11px;
+  position:absolute;
+  top: -8px;
+  left: 5px;
 }
 .edit-username{
   display: flex;
@@ -141,4 +152,8 @@ header{
   align-items: center;
   margin-right:12px;
   font-size:1.1rem;
+}
+.message{
+  margin-top: 10px;
+  position: relative;
 }
