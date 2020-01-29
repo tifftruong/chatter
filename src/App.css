@@ -114,7 +114,9 @@ header{
   display: inline-block;
 }
 .msg-name{
-  font:11px;
+  font:5px;
+  font-size:10px;
+  color:white;
   position:absolute;
   top: -8px;
   left: 5px;
@@ -151,7 +153,8 @@ header{
   display: flex;
   align-items: center;
   margin-right:12px;
-  font-size:1.1rem;
+  font-size:1rem;
+  color:white;
 }
 .message{
   margin-top: 10px;
